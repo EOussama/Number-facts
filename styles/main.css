@@ -52,15 +52,15 @@ input[type="number"], input[type="date"] {
 p { margin-top: 10px; }
 
 .controlTab {
+	display: flex;
 	position: relative;
 	top: 2px;
-	left: 1px;
 	width: 564px;
 	margin: auto;
 }
 
 .controlTab button {
-	width: 33.4%;
+	width: 25.65%;
 	padding: 10px 20px;
 	background-color: var(--primaryColor);
 	color: white;
@@ -73,7 +73,7 @@ p { margin-top: 10px; }
 
 .controlTab button:hover { background-color: #248bef; }
 
-#card-math, #card-trivia, #card-date {
+#card-math, #card-trivia, #card-date, #card-year {
 	animation-name: fade;
 	animation-duration: 1.5s;
 }
