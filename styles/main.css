@@ -78,6 +78,8 @@ p { margin-top: 10px; }
 	animation-duration: 1.5s;
 }
 
+.active { background-color: red; }
+
 @keyframes fade {
 	from {
 		opacity: 0;

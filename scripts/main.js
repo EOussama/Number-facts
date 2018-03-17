@@ -39,9 +39,9 @@ window.addEventListener('load', function() { "use strict";
 		}
 	}
 											
-	mathBtn.addEventListener('click', () => slide(0));
-	triviaBtn.addEventListener('click', () => slide(1));
-	dateBtn.addEventListener('click', () => slide(2));
+	mathBtn.addEventListener('click', () => slide(0, mathBtn));
+	triviaBtn.addEventListener('click', () => slide(1, triviaBtn));
+	dateBtn.addEventListener('click', () => slide(2, dateBtn));
 											
 	cbMath.addEventListener('input', function() {
 		if(cbMath.value != '') {
