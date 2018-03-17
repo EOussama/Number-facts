@@ -9,6 +9,7 @@
         <meta name="description" content="A simple app that have you input a number and outputs a fact based on it.">
         <meta name="keywords" content="numbers, facts, number fact">
 
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="icon" type="image/png" href="images/favicon.png">
 
@@ -16,7 +17,56 @@
     </head>
 
     <body>
-        
+        <main>
+			<h1>Number facts</h1>
+			
+			<div class="controlTab">
+				<button id="mathBtn">Math</button>
+				<button id="triviaBtn">Trivia</button>
+				<button id="dateBtn">Date</button>
+			</div>
+			<div class="card">
+				<div id="card-math">
+					<div class="card-header">
+						<h2>Math facts</h2>
+					</div>
+
+					<div class="card-body">
+						<form>
+							<input type="number" placeholder="Input a number" id="cbMath">
+						</form>
+
+						<p id="numberFact"></p>
+					</div>
+				</div>
+				<div id="card-trivia">
+					<div class="card-header">
+						<h2>Trivia facts</h2>
+					</div>
+
+					<div class="card-body">
+						<form>
+							<input type="number" placeholder="Input a number" id="cbTrivia">
+						</form>
+
+						<p id="triviaFact"></p>
+					</div>
+				</div>
+				<div id="card-date">
+					<div class="card-header">
+						<h2>Date facts</h2>
+					</div>
+
+					<div class="card-body">
+						<form>
+							<input type="date" placeholder="Input a date" id="cbDate">
+						</form>
+
+						<p id="dateFact"></p>
+					</div>
+				</div>
+			</div>
+		</main>
         <script type="text/javascript" src="scripts/main.js"></script>
     </body>
 </html>
