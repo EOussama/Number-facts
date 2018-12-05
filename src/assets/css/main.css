@@ -1,0 +1,124 @@
+/**
+*
+* @name:       Number facts
+* @version:    0.1.0
+* @author:     EOussama
+* @license     Apache-2.0
+* @source:     https://github.com/EOussama/Number-facts
+* 
+* The main stylesheet of the app.
+*
+*/
+
+:root {
+	--color-primary: #1774ce;
+    --color-secondary: #0c549a;
+    
+    margin: 0;
+    padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+	overflow: hidden;
+	padding: 20px 50px;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0 80px 0;
+	font-size: 50px;
+	text-shadow: 2px 2px 5px #00000075;
+}
+
+p {
+    margin-top: 10px;
+}
+
+/* #region Card */
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.card {
+	background-color: var(--color-primary);
+	border: 1.5px solid var(--color-secondary);
+	border-radius: 2px;
+    box-shadow: 2px 2px 3px #00000047;
+    box-sizing: border-box;
+    color: white;
+    margin: auto;
+	overflow: hidden;
+    padding: 10px 30px 0px 30px;
+    width: 100%;
+}
+
+.card-header {
+	margin-bottom: 5px;
+	padding: 10px 0px;
+	border-bottom: 2px solid #ffffff9e;
+}
+
+.card-body {
+    padding: 20px 0px;
+}
+/* #endregion */
+
+/* #region Controls */
+input[type="number"], input[type="date"] {
+	border: 1px solid white;
+	border-radius: 3px;
+    font-weight: bold;
+    padding: 10px;
+	width: 95.5%;
+}
+
+.control-tab {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+	position: relative;
+	top: 2px;
+    width: 100%;
+}
+
+.control-tab button {
+	background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    box-sizing: border-box;
+	color: white;
+    cursor: pointer;
+    flex: 1;
+	margin-right: -5px;
+    padding: 10px 20px;
+	transition-duration: .5s;
+	transition-property: background-color;
+}
+
+.control-tab button:hover {
+    background-color: #248bef;
+}
+/* #endregion */
+#card-math, #card-trivia, #card-date, #card-year {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+.active { background-color: red; }
+
+@keyframes fade {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	
+	to { 
+		opacity: 1;
+		transform: scale(1);
+	}
+}

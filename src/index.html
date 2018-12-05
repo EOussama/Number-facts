@@ -1,0 +1,112 @@
+<!--
+
+    @name:       Number facts
+    @version:    0.1.0
+    @author:     EOussama
+    @license     Apache-2.0
+    @source:     https://github.com/EOussama/Number-facts
+    
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <!-- Meta data. -->
+        <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="EOussama">
+        <meta name="application-name" content="Number facts">
+        <meta name="description" content="A simple app that have you input a number and outputs a fact based on it.">
+        <meta name="keywords" content="numbers, facts, number fact">
+
+        <!-- The main stylesheets. -->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <!-- The favicon. -->
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+
+        <!-- The title. -->
+        <title>Number facts</title>
+    </head>
+
+    <body>
+
+        <!-- The main content. -->
+        <main>
+			<h1>Number facts</h1>
+            
+            <div class="card-wrapper">
+
+                <!-- Card controls. -->
+                <div class="control-tab">
+                    <button id="mathBtn">Math</button>
+                    <button id="triviaBtn">Trivia</button>
+                    <button id="dateBtn">Date</button>
+                    <button id="yearBtn">Year</button>
+                </div>
+                
+                <!-- Cards. -->
+                <div class="card">
+                    <div id="card-math">
+                        <div class="card-header">
+                            <h2>Math facts</h2>
+                        </div>
+    
+                        <div class="card-body">
+                            <form>
+                                <input type="number" placeholder="Input a number" id="cbMath">
+                            </form>
+    
+                            <p id="numberFact"></p>
+                        </div>
+                    </div>
+                    <div id="card-trivia">
+                        <div class="card-header">
+                            <h2>Trivia facts</h2>
+                        </div>
+    
+                        <div class="card-body">
+                            <form>
+                                <input type="number" placeholder="Input a number" id="cbTrivia">
+                            </form>
+    
+                            <p id="triviaFact"></p>
+                        </div>
+                    </div>
+                    <div id="card-date">
+                        <div class="card-header">
+                            <h2>Date facts</h2>
+                        </div>
+    
+                        <div class="card-body">
+                            <form>
+                                <input type="date" placeholder="Input a date" id="cbDate">
+                            </form>
+    
+                            <p id="dateFact"></p>
+                        </div>
+                    </div>
+                    <div id="card-year">
+                        <div class="card-header">
+                            <h2>Year facts</h2>
+                        </div>
+    
+                        <div class="card-body">
+                            <form>
+                                <input type="number" placeholder="Input a year" id="cbYear">
+                            </form>
+    
+                            <p id="yearFact"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</main>
+
+        <!-- The main javascript file. -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

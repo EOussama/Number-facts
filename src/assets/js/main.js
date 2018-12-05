@@ -1,3 +1,17 @@
+/**
+*
+* @name:       Number facts
+* @version:    0.1.0
+* @author:     EOussama
+* @license     Apache-2.0
+* @source:     https://github.com/EOussama/Number-facts
+* 
+* The main javascript file of the app.
+*
+*/
+
+"use strict";
+
 window.addEventListener('load', function() { "use strict";
 	const
 		cardMath = document.getElementById('card-math'),
@@ -81,7 +95,7 @@ window.addEventListener('load', function() { "use strict";
 				date = new Date(this.value),
 				month = date.getMonth() + 1,
 				day = date.getDate();
-			console.log(this.value);
+
 		   	fetch(`http://numbersapi.com/${month}/${day}/date`).then((res) => res.text()).then((data) => dateFact.textContent = data);
 		}
 		
